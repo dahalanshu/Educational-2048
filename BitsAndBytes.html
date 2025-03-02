@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MergeIT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Back Button -->
+  <button id="backButton" class="back-button" onclick="window.location.href='Main.html'">Back</button>
+
+  <h1>MergeIT</h1>
+  <p>Combine tiles to reach "brontobyte"!</p>
+
+  <div id="score-container">
+    <div id="current-score">Score: 0</div>
+    <div id="high-score">High Score: 0</div>
+  </div>
+
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <div id="message-container">
+    <p id="game-message"></p>
+    <button id="tryAgainButton" style="display: none;">Try Again</button>
+  </div>
+
+  <script src="Bits.js"></script>
+</body>
+</html>

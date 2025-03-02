@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MergeIT</title>
+  <style>
+    /* Apply Arial font to the whole document */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #faf8ef;
+    }
+
+    h1 {
+        color: #776e65; 
+    }
+
+    /* Container for buttons */
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px; /* Space between buttons */
+      max-width: 600px;
+      max-height: 600px;
+      margin: auto; /* Center the container */
+    }
+
+    /* Style for individual buttons */
+    .rectangle-button {
+      background-color: #bbada0; 
+      color: white; /* White text */
+      padding: 20px 40px; /* Padding for a rectangular shape */
+      text-align: center; /* Center text inside button */
+      text-decoration: none; /* Remove underline from link */
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px; /* Slightly rounded corners */
+      border: 5%; /* No border */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: all 0.3s ease; /* Smooth transition */
+      width: 45%; /* Make buttons fit into two columns */
+      height: 200px;
+      margin: 5px;
+    }    
+
+    /* Add extra space between the first and second line */
+    .rectangle-button:nth-child(3), .rectangle-button:nth-child(4) {
+        margin-top: 10px; /* Space between the first and second row of the buttons */
+    }
+
+    /* Button hover effect */
+    .rectangle-button:hover {
+      background-color: #8f7a66; /* Darker green on hover */
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
+    /* Make sure buttons are stacked in two rows */
+    @media (max-width: 600px) {
+      .rectangle-button {
+        width: 100%; /* Full width on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+  <h1>MergeIT</h1>
+  <h2 style="font-size: 20px; color: #776e65; font-weight: normal; margin-top: -10px; ">
+    Choose from four unique categories and watch your tiles evolve as you merge them!
+  </h2>
+  <form>
+    <button class="rectangle-button" type="button" onclick="window.location.href='BitsAndBytes.html'">Bits and Bytes</button><!-- "Bits" Button linking to hack.html -->
+    <button class="rectangle-button" type="button" onclick="window.location.href='WordCombo.html'">Word Combo</button>
+    <button class="rectangle-button" type="button" onclick="window.location.href='CellsToSystems.html'">Cells to Systems</button>
+    <button class="rectangle-button" type="button" onclick="window.location.href='ClockingIn.html'">Clocking In</button>
+  </form>
+</div>
+
+</body>
+</html>

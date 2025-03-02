@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    background-color: #faf8ef;
+}
+
+h1 {
+    color: #776e65;
+}
+
+#score-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#current-score, #high-score {
+    background: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#game-container {
+    display: inline-block;
+    background: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+canvas {
+    background-color: #cdc1b4;
+    display: block;
+}
+
+#message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#game-message {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space between message and button */
+}
+
+#tryAgainButton {
+    display: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #8f7a66;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#tryAgainButton:hover {
+    background-color: #776e65;
+}
+
+/* Back Button Style */
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #776e65;
+}
+
